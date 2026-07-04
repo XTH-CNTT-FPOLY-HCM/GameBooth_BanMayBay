@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ARC/Assets/Scenes/Showroom/Showroom.unity
-    guid: 2f7fe983fcb28774599100d415bec82f
+    path: Assets/ARC/Demo/Demo.unity
+    guid: 7200e15f527e94849899909ba9cb0357
   - enabled: 1
     path: Assets/ARC/Assets/Scenes/MainMenu/01_MM.unity
     guid: 7030b47c8f971489182cec6e056d4448

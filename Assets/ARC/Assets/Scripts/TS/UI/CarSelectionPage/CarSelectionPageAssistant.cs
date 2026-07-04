@@ -1,4 +1,4 @@
-﻿// Description: CarSelectionPageAssistant: attached to CarSelectionAssitantP1 an CarSelectionAssitantP2
+// Description: CarSelectionPageAssistant: attached to CarSelectionAssitantP1 an CarSelectionAssitantP2
 // in Main Menu scene. Page Grp_Game_CarSelection
 using System.Collections.Generic;
 using UnityEngine;
@@ -71,7 +71,8 @@ namespace TS.Generics
 
                 for (var i = 0; i < listObjState.Count; i++)
                 {
-                    listObjState[i].Obj.SetActive(listObjState[i].listStateDependingPlayerNumber[0]);
+                    if (listObjState[i].Obj != null)
+                        listObjState[i].Obj.SetActive(listObjState[i].listStateDependingPlayerNumber[0]);
                 }
             }
             else
@@ -81,7 +82,8 @@ namespace TS.Generics
 
                 for (var i = 0; i < listObjState.Count; i++)
                 {
-                    listObjState[i].Obj.SetActive(listObjState[i].listStateDependingPlayerNumber[1]);
+                    if (listObjState[i].Obj != null)
+                        listObjState[i].Obj.SetActive(listObjState[i].listStateDependingPlayerNumber[1]);
                 }
 
                 if (grpPlayerVehicle) grpPlayerVehicle.pivot = new Vector2(.5f, pivotV);

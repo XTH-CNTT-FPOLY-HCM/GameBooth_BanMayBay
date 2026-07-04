@@ -1,4 +1,4 @@
-﻿// Description: ButtonVariousMethods:
+// Description: ButtonVariousMethods:
 using UnityEngine;
 
 
@@ -13,8 +13,24 @@ namespace TS.Generics
             {
                 InfoRememberMainMenuSelection.instance.playerMainMenuSelection.HowManyPlayer = 1;
                 GameModeGlobal.instance.GenerateNameList();
-                PageIn currentMenu = CanvasMainMenuManager.instance.listMenu[PageNumber].transform.parent.GetComponent<PageIn>();
-                currentMenu.DisplayNewPage(PageNumber);
+
+                // ---> Tự động set chế độ Arcade (0) <---
+                InfoRememberMainMenuSelection.instance.playerMainMenuSelection.currentGameMode = 0; 
+
+                // Tự động tìm Page chọn xe (thay vì trang chọn chế độ gốc)
+                int carPageNumber = PageNumber;
+                for (int i = 0; i < CanvasMainMenuManager.instance.listMenu.Count; i++)
+                {
+                    string parentName = CanvasMainMenuManager.instance.listMenu[i].transform.parent.name;
+                    if (parentName.Contains("CarSelection") || parentName.Contains("ChooseCar"))
+                    {
+                        carPageNumber = i;
+                        break;
+                    }
+                }
+
+                PageIn currentMenu = CanvasMainMenuManager.instance.listMenu[carPageNumber].transform.parent.GetComponent<PageIn>();
+                currentMenu.DisplayNewPage(carPageNumber);
             }
         }
 

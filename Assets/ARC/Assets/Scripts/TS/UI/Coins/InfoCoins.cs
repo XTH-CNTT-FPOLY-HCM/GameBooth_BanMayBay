@@ -1,4 +1,4 @@
-﻿// Description: InfoCoins: Access from anywhere info about Coins. How many coins, update/ADd coins.
+// Description: InfoCoins: Access from anywhere info about Coins. How many coins, update/ADd coins.
 using System.Collections.Generic;
 using UnityEngine;
 using System.Globalization;
@@ -8,7 +8,7 @@ namespace TS.Generics {
     {
         public static InfoCoins instance = null;
 
-        public int currentPlayerCoins = 1000;
+        public int currentPlayerCoins = 262021;
 
         void Awake()
         {
@@ -37,7 +37,6 @@ namespace TS.Generics {
                 string[] codes = sData.Split('_');
                 UpdateCoins(int.Parse(codes[0]));
             }
-                
         }
 
         public void UpdateCoins(int addCoins = 0)

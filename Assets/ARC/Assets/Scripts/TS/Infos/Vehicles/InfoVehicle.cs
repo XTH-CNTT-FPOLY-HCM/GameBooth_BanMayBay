@@ -1,4 +1,4 @@
-﻿// Description: InfoVehicle: Access from anywhere info about vehicles (unlocked vehicles, P1 P2 selected vehicle ID, Vehicles parameters).
+// Description: InfoVehicle: Access from anywhere info about vehicles (unlocked vehicles, P1 P2 selected vehicle ID, Vehicles parameters).
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -58,6 +58,12 @@ namespace TS.Generics
                     
                     counter++;
                 }
+            }
+
+            // Bẻ khóa (hack) để mở toàn bộ xe
+            for (int i = 0; i < vehicleParametersInGameList.Count; i++)
+            {
+                vehicleParametersInGameList[i].isUnlocked = true;
             }
         }
 
