@@ -3733,7 +3733,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '!!! Locked: Machine Gun !!!'
+  m_Text: "C\u1EA3nh B\xE1o!!!"
 --- !u!114 &218116227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7418,7 +7418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1980121897
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7434,9 +7434,9 @@ RectTransform:
   - {fileID: 1093016209}
   m_Father: {fileID: 2619476478177828048}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 140.5, y: -125}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1980121896
@@ -14205,7 +14205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 254325058738831282, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 254325058738831282, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14222,6 +14222,14 @@ PrefabInstance:
     - target: {fileID: 254325058738831283, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
       propertyPath: _Entry
       value: 162
+      objectReference: {fileID: 0}
+    - target: {fileID: 254325058738831283, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
+      propertyPath: bBypass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 254325058738831283, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
+      propertyPath: SeeInspector
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 254325058738831284, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
       propertyPath: m_Text
@@ -15416,7 +15424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 254325058738831282, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3
+      value: -4.42
       objectReference: {fileID: 0}
     - target: {fileID: 254325058738831282, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16160,9 +16168,17 @@ PrefabInstance:
       propertyPath: _Entry
       value: 164
       objectReference: {fileID: 0}
+    - target: {fileID: 254325058738831283, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
+      propertyPath: bBypass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 254325058738831283, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
+      propertyPath: SeeInspector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 254325058738831284, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
       propertyPath: m_Text
-      value: 'Time:'
+      value: "Th\u1EDDi Gian:"
       objectReference: {fileID: 0}
     - target: {fileID: 254325058738831284, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
       propertyPath: m_Color.a
@@ -16932,9 +16948,17 @@ PrefabInstance:
       propertyPath: _Entry
       value: 163
       objectReference: {fileID: 0}
+    - target: {fileID: 254325058738831283, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
+      propertyPath: bBypass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 254325058738831283, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
+      propertyPath: SeeInspector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 254325058738831284, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
       propertyPath: m_Text
-      value: 'Lap:'
+      value: "V\xF2ng:"
       objectReference: {fileID: 0}
     - target: {fileID: 254325058738831284, guid: b814f5eacf1f445cca912e0c081d3036, type: 3}
       propertyPath: m_Color.a
