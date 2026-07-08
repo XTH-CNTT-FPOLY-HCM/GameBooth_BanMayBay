@@ -1,12 +1,13 @@
-﻿// Description: PowerUpsSystem. This script manage power-ups for each vehicle
+// Description: PowerUpsSystem. This script manage power-ups for each vehicle
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
 
-namespace TS.Generics {
+namespace TS.Generics
+{
     public class PowerUpsSystem : MonoBehaviour
     {
         [HideInInspector]
@@ -73,7 +74,7 @@ namespace TS.Generics {
         public float timerEnemyAttackAllowed = 0;
         [HideInInspector]
         public int howManyAttackDetected;
-        public int howManyAttackAllowed =3;
+        public int howManyAttackAllowed = 3;
         public float timerDuration = 10;
 
         [HideInInspector]
@@ -227,7 +228,8 @@ namespace TS.Generics {
             }
 
 
-            vehiclePrefabInit = transform.parent.GetComponent<VehiclePrefabInit>();
+            if (transform.parent != null)
+                vehiclePrefabInit = transform.parent.GetComponent<VehiclePrefabInit>();
             int howManyPlayer = InfoRememberMainMenuSelection.instance.playerMainMenuSelection.HowManyPlayer;
 
             //-> P1 | P2 only
@@ -335,8 +337,7 @@ namespace TS.Generics {
         {
             if (b_InitDone &&
                 b_IsDelayComplete &&
-                vehiclePrefabInit &&
-                vehiclePrefabInit.b_InitDone &&
+                (vehiclePrefabInit == null || vehiclePrefabInit.b_InitDone) &&
                 !PauseManager.instance.Bool_IsGamePaused &&
                 LapCounterAndPosition.instance.posList.Count > vehicleInfo.playerNumber &&
                 !LapCounterAndPosition.instance.posList[vehicleInfo.playerNumber].IsRaceComplete)
@@ -371,13 +372,13 @@ namespace TS.Generics {
 
         void AICases()
         {
-            if(currentPowerUps != 0)
+            if (currentPowerUps != 0)
             {
                 PUInfo puInfo = new PUInfo(this, currentPowerUps);
                 powerUpAIUpdate[currentPowerUps].AIUpdatePowerUp(puInfo);
             }
         }
-        
+
         void PlayerCases()
         {
             // If different: No Power-up or Random case
@@ -393,7 +394,7 @@ namespace TS.Generics {
         // Feedback when player 1 or 2 are locked
         public void PlayerLockedWarning(int txtID, Color color)
         {
-            if(howManyAttackDetected == 0)
+            if (howManyAttackDetected == 0)
                 StartCoroutine(HowManyAttackDetectedRoutine());
 
             howManyAttackDetected++;
@@ -405,7 +406,7 @@ namespace TS.Generics {
             {
                 StartCoroutine(PlayerLockedWarningRoutine(txtID, color));
             }
-               
+
         }
 
         public IEnumerator HowManyAttackDetectedRoutine()
@@ -448,7 +449,7 @@ namespace TS.Generics {
             Debug.Log("Warning");
             if (!vehicleAI.enabled)
             {
-                if(aSourceWarning.gameObject.activeInHierarchy)
+                if (aSourceWarning.gameObject.activeInHierarchy)
                     aSourceWarning.Play();
                 objPlayerLocked.SetActive(true);
 
@@ -469,7 +470,7 @@ namespace TS.Generics {
 
         void OnTriggerEnter(Collider other)
         {
-            if (b_InitDone && vehiclePrefabInit && vehiclePrefabInit.b_InitDone)
+            if (b_InitDone && (vehiclePrefabInit == null || vehiclePrefabInit.b_InitDone))
             {
                 //Debug.Log(other.transform.name);
                 if (other.GetComponent<PowerUpsItems>() &&
@@ -496,7 +497,7 @@ namespace TS.Generics {
                         // Disable Power-up trigger for a few seconds.
                         // Check if this vehicle is managed by the player 2 to spacial sound if needed
                         if (!vehicleAI.enabled && vehicleInfo.playerNumber == 1)
-                            powerUpsItems.PowerUpItemActivated(true) ;
+                            powerUpsItems.PowerUpItemActivated(true);
                         else
                             powerUpsItems.PowerUpItemActivated(false);
                     }
@@ -555,7 +556,7 @@ namespace TS.Generics {
                 bool b_Allow = powerAllowToChangePU[i].AllowToChangePowerUp(puAllowChange);
                 if (b_Allow) return b_Allow;
             }
-    
+
             return false;
         }
 

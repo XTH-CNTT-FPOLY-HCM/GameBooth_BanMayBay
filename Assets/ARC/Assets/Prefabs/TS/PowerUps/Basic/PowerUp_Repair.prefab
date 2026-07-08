@@ -29,13 +29,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8512764057985571010}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3570075380754013603}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8512764057985571032
 MeshFilter:
@@ -53,10 +54,18 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8512764057985571010}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
+  serializedVersion: 3
+  m_Size: {x: 12, y: 12, z: 12}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8512764057985571014
 MonoBehaviour:
@@ -80,6 +89,8 @@ MonoBehaviour:
   aSource: {fileID: 8512764057985571013}
   Grp_Item: {fileID: 9031198697231243681}
   b_HideItemWhenActivated: 1
+  randomPU: 0
+  randomPUList: 
 --- !u!82 &8512764057985571013
 AudioSource:
   m_ObjectHideFlags: 0
@@ -91,6 +102,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4721034846420512112, guid: 2fa3710a8451a45288cab822b4dba345, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2fcb7f0a1c2aa4382a767b5341735d31, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2fcb7f0a1c2aa4382a767b5341735d31, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -237,19 +249,21 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9031198697231243681}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 171768087111316270}
   m_Father: {fileID: 8512764057985571011}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3563011268047898755
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3570075380754013603}
     m_Modifications:
     - target: {fileID: 3679552997071862701, guid: 4dfc9676837c51343adb57415a02349f, type: 3}
@@ -313,6 +327,9 @@ PrefabInstance:
       value: LOD_Bonus_Repair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dfc9676837c51343adb57415a02349f, type: 3}
 --- !u!4 &171768087111316270 stripped
 Transform:
