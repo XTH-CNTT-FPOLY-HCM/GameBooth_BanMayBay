@@ -16,7 +16,7 @@ MonoBehaviour:
   HelpBox: 1
   tab: 0
   carParametersList:
-  - name: Wind Hunter
+  - name: "Ng\u1EF1 Phong"
     bShow: 1
     Prefab: {fileID: 292987107468116022, guid: 32263de1b73dd47a69b879c0022cfd0f, type: 3}
     vehicleCategory: 0
@@ -35,7 +35,7 @@ MonoBehaviour:
     boosterCooldownAI: 0.1
     prefabScaleMultiplierInMenu: 1
     bShowInEditor: 1
-  - name: Flying Circus
+  - name: "Phi H\xFD"
     bShow: 1
     Prefab: {fileID: 292987107468116022, guid: e31bfc26c1de941d8a63ad39bbfd9a28, type: 3}
     vehicleCategory: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
     boosterCooldownAI: 0.1
     prefabScaleMultiplierInMenu: 1
     bShowInEditor: 0
-  - name: Blue Parrot
+  - name: "Lam V\u0169"
     bShow: 1
     Prefab: {fileID: 292987107468116022, guid: e8ac02904d566466a9f1d733c568979d, type: 3}
     vehicleCategory: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
     boosterCooldownAI: 0.1
     prefabScaleMultiplierInMenu: 1
     bShowInEditor: 0
-  - name: Shark
+  - name: "K\xECnh Ng\u01B0"
     bShow: 1
     Prefab: {fileID: 5246781247246507886, guid: d07ec25cf51414876995ba8a6394688e, type: 3}
     vehicleCategory: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
     boosterCooldownAI: 0.1
     prefabScaleMultiplierInMenu: 1
     bShowInEditor: 0
-  - name: Lucky
+  - name: "C\xE1t T\u01B0\u1EDDng"
     bShow: 1
     Prefab: {fileID: 6976001628453705027, guid: ae8a21b884a1e42f284f668fca5e6aec, type: 3}
     vehicleCategory: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
     boosterCooldownAI: 0.1
     prefabScaleMultiplierInMenu: 1
     bShowInEditor: 0
-  - name: Phoenix
+  - name: "H\u1ECFa Ph\u01B0\u1EE3ng"
     bShow: 1
     Prefab: {fileID: 6326287053275689705, guid: 05ede286361f9473c9970d6f7bf5f325, type: 3}
     vehicleCategory: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
     boosterCooldownAI: 0.1
     prefabScaleMultiplierInMenu: 1
     bShowInEditor: 0
-  - name: Ehecatl
+  - name: "Phong Th\u1EA7n"
     bShow: 1
     Prefab: {fileID: 807084391811635007, guid: e00d549d74eb249a3b6089cd33eae9df, type: 3}
     vehicleCategory: 0
@@ -149,7 +149,7 @@ MonoBehaviour:
     boosterCooldownAI: 0.1
     prefabScaleMultiplierInMenu: 1
     bShowInEditor: 0
-  - name: Rose Bird
+  - name: "H\u1ED3ng T\u01B0\u1EDBc"
     bShow: 1
     Prefab: {fileID: 3986291882033223593, guid: 985753d7932aa460e85258b8c7f0eb2f, type: 3}
     vehicleCategory: 0
