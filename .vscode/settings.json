@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "BanMayBay.sln"
+    "dotnet.defaultSolution": "GameBooth_BanMayBay.sln"
 }
