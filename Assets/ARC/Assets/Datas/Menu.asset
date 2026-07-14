@@ -26,8 +26,8 @@ MonoBehaviour:
     - Validation
     - Validation
   - multiLanguage:
-    - Pause
-    - Pause
+    - "T\u1EA1m D\u1EEBng"
+    - "T\u1EA1m D\u1EEBng"
   - multiLanguage:
     - Left
     - Gauche
@@ -68,7 +68,7 @@ MonoBehaviour:
     - Quit Game
     - Quitter le jeu
   - multiLanguage:
-    - Quit
+    - "Tho\xE1t"
     - Quitter
   - multiLanguage:
     - Options
@@ -230,7 +230,7 @@ MonoBehaviour:
     - New Track
     - Nom de la track
   - multiLanguage:
-    - Settings
+    - "C\xE0i \u0111\u1EB7t"
     - Options
   - multiLanguage:
     - Choose
@@ -269,7 +269,8 @@ MonoBehaviour:
     - Go to the garage and buy new vehicles.
     - "Faites un tour au garage et d\xE9couvrez les nouveaux v\xE9hicules disponibles."
   - multiLanguage:
-    - Manage game settings (Inputs, Language, Graphics, Audio).
+    - "Qu\u1EA3n l\xFD c\xE0i \u0111\u1EB7t tr\xF2 ch\u01A1i (\u0110i\u1EC1u khi\u1EC3n,
+      Ng\xF4n ng\u1EEF, \u0110\u1ED3 h\u1ECDa, \xC2m thanh)."
     - "G\xE9rez les param\xE8tres du jeu (Commande, Langue, Graphisme, Audio)."
   - multiLanguage:
     - Are you the best in the ranking?
@@ -362,19 +363,19 @@ MonoBehaviour:
     - Already bought!
     - "D\xE9j\xE0 achet\xE9 !"
   - multiLanguage:
-    - Resume
+    - "Ti\u1EBFp T\u1EE5c"
     - Reprendre
   - multiLanguage:
-    - Restart
+    - "Ch\u01A1i L\u1EA1i"
     - Recommencer
   - multiLanguage:
-    - Resume the race.
+    - "Ti\u1EBFp t\u1EE5c cu\u1ED9c \u0111ua "
     - Continuer la course.
   - multiLanguage:
-    - Restart the race.
+    - "B\u1EAFt \u0111\u1EA7u l\u1EA1i cu\u1ED9c \u0111ua "
     - Recommencer la course.
   - multiLanguage:
-    - Go back to the main menu.
+    - "Quay v\u1EC1 menu ch\xEDnh"
     - Retourner au menu principal.
   - multiLanguage:
     - Restart?

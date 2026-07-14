@@ -22,8 +22,8 @@ MonoBehaviour:
   currentelectedDatas: 0
   toggleLanguageList: 0101
   b_UpdateAfterNewTextDataCreation: 0
-  StartPos: 0
-  EndPos: 30
+  StartPos: 84
+  EndPos: 115
   tab: 0
   newEntryTextList:
   - 
